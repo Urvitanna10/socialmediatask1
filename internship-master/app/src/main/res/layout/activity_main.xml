@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2056"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textview_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:text="Click on btn to login google or facebook"
+        android:textSize="@dimen/_12ssp"
+         />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/google_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_10sdp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/proflie_pic"
+        android:layout_width="@dimen/_150sdp"
+        android:background="@drawable/ic_launcher_background"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username:"
+        android:textSize="@dimen/_14ssp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_below="@+id/proflie_pic"
+        android:layout_marginTop="@dimen/_31sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_14ssp"
+        android:text="UserName:"
+        android:id="@+id/txtUsername"
+        android:layout_below="@+id/proflie_pic"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="@dimen/_90sdp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:background="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textSize="@dimen/_14ssp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="@dimen/_15sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_14ssp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_90sdp"
+        android:text="Email:"
+        android:layout_below="@+id/txtUsername"
+        android:id="@+id/txtEmail"
+        />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_12sdp"
+        android:paddingTop="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_70sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

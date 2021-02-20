@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Social Media Integration"
+        android:textSize="@dimen/_28ssp"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:layout_centerInParent="true"/>
+    
+    <ImageView
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:src="@drawable/facebook"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_100sdp"
+        >
+
+    </ImageView>
+    <ImageView
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:src="@drawable/iconfinder_google"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="@dimen/_40sdp"
+       android:layout_marginLeft="@dimen/_150sdp">
+
+    </ImageView>
+    
+
+</RelativeLayout>
